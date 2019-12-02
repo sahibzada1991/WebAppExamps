@@ -16,6 +16,7 @@ public class ProductControllers {
 	@RequestMapping(value = "product", method = RequestMethod.GET)
 	public ModelAndView showPage() {
 		System.out.println("product in api is working");
+		System.out.println("api works");
 
 		ProductDto p = productService.giveDemoProduct();
 		System.out.println(p.toString());
